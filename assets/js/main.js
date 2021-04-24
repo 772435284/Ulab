@@ -15,7 +15,7 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "assets/images/Ubox.png");
+            $(".navbar-area img").attr("src", "assets/images/Ubox_white.png");
             $(".navbar-area font").attr("color", "#FFFFFF");
         } else {
             $(".navbar-area").addClass("sticky");
