@@ -338,7 +338,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <button class="main-btn rounded-one" id="1"  name="1" class="buy">GET STARTED</button>
+                            <button class="main-btn rounded-one" id="1"  name="1" class="buy" onclick=buyStorage(this.id)>GET STARTED</button>
                         </div>    
                     </div> <!-- pricing style one -->
                 </div>
@@ -359,7 +359,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <button class="main-btn rounded-one" id="2"  name="2" class="buy">GET STARTED</button>
+                            <button class="main-btn rounded-one" id="2"  name="2" class="buy" onclick=buyStorage(this.id)>GET STARTED</button>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -380,7 +380,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <button class="main-btn rounded-one" id="3"  name="3" class="buy">GET STARTED</button>
+                            <button class="main-btn rounded-one" id="3"  name="3" class="buy" onclick=buyStorage(this.id)>GET STARTED</button>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -971,42 +971,54 @@
 ]
             ,'0x447b9df45A3c7ec2F79fE6a17df42c44f68bb364');
 
-
-
-        $("#1").click(function() {
-            console.log(info);
-            console.log(web3.eth.defaultAccount);
-
-            info.methods.buyStorage()
-            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('0.1','ether') },
-             function(error, transactionHash) {
-                 console.log(error)
-            });
-        });
-
-        $("#2").click(function() {
-            console.log(info);
-            console.log(web3.eth.defaultAccount);
-
-            info.methods.buyStorage()
-            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('2','ether') },
-             function(error, transactionHash) {
-                 console.log(error)
-            });
-        });
         
-        $("#3").click(function() {
+
+        // 测试时可以修改amount值为0.1，避免钱不够，格式为string
+        function buyStorage(id) {
             console.log(info);
             console.log(web3.eth.defaultAccount);
-
+            var amount = id.toString();
+            console.log(amount)
             info.methods.buyStorage()
-            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('3','ether') },
+            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei(amount,'ether') },
              function(error, transactionHash) {
                  console.log(error)
-            });
-        });
+             })
+        }
 
 
+        // $("#1").click(function() {
+        //     console.log(info);
+        //     console.log(web3.eth.defaultAccount);
+
+        //     info.methods.buyStorage()
+        //     .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('0.1','ether') },
+        //      function(error, transactionHash) {
+        //          console.log(error)
+        //     });
+        // });
+
+        // $("#2").click(function() {
+        //     console.log(info);
+        //     console.log(web3.eth.defaultAccount);
+
+        //     info.methods.buyStorage()
+        //     .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('2','ether') },
+        //      function(error, transactionHash) {
+        //          console.log(error)
+        //     });
+        // });
+        
+        // $("#3").click(function() {
+        //     console.log(info);
+        //     console.log(web3.eth.defaultAccount);
+
+        //     info.methods.buyStorage()
+        //     .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('3','ether') },
+        //      function(error, transactionHash) {
+        //          console.log(error)
+        //     });
+        // });
     </script>
 </body>
 
