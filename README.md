@@ -13,7 +13,7 @@
 
 ## Contact
 - m730026088@mail.uic.edu.hk
-- m730026040mail.uic.edu.hk
+- m730026040@mail.uic.edu.hk
 - m730026090@mail.uic.edu.hk
 - m730026027@mail.uic.edu.hk
 - m730026045@mail.uic.edu.hk
