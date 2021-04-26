@@ -1,4 +1,5 @@
 # Ulab ICO
+The next generation computing platform
 
 ## EBIS2003 Course Project
 
@@ -10,6 +11,11 @@
 - Run the website on localhost using php server
 - Send money to the contract
 - More will be updated ...
+
+## Important Note
+- Created token name: Ubi
+- reward date end: 3 weeks after start
+- ICO end:  12 week after start
 
 ## Contact
 - m730026088@mail.uic.edu.hk
