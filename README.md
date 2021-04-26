@@ -1,4 +1,4 @@
-# Ubox ICO
+# Ulab ICO
 
 ## EBIS2003 Course Project
 
