@@ -1,4 +1,4 @@
-# Ubox ICO
+# Ulab ICO
 
 ## EBIS2003 Course Project
 
@@ -7,7 +7,7 @@
 - Register metemask wallet
 - Compile and Deploy on remix
 - Add token in the wallet
-- Run the website on localhost using php serve
+- Run the website on localhost using php server
 - Send money to the contract
 - More will be updated ...
 
