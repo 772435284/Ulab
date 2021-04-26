@@ -118,8 +118,8 @@ contract ubiToken is ERC20Interface, Owned, SafeMath {
         symbol = "UBI";
         name = "UBI Token";
         decimals = 18;
-        bonusEnds = now + 2 weeks;
-        endDate = now + 10 weeks;
+        bonusEnds = now + 3 weeks;
+        endDate = now + 12 weeks;
 
     }
 
