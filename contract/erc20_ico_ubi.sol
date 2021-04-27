@@ -120,7 +120,6 @@ contract ubiToken is ERC20Interface, Owned, SafeMath {
         decimals = 18;
         bonusEnds = now + 3 weeks;
         endDate = now + 12 weeks;
-
     }
 
 
@@ -210,7 +209,7 @@ contract ubiToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // 1,000,000 UBI Tokens per 1 ETH
     // ------------------------------------------------------------------------
-    function buyStorage() public payable {
+    function invest() public payable {
         require(now >= startDate && now <= endDate);
         uint tokens;
         if (now <= bonusEnds) {
