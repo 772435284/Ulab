@@ -993,7 +993,7 @@
             var amount = id.toString();
             console.log(amount)
             info.methods.invest()
-            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei(amount,'ether') },
+            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('6','ether') },
              function(error, transactionHash) {
                  console.log(error)
              })
