@@ -347,7 +347,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <button class="main-btn rounded-one" id="1"  name="1" class="buy" onclick=buyStorage(this.id)>GET STARTED</button>
+                            <button class="main-btn rounded-one" id="1"  name="1" class="buy" onclick=invest(this.id)>GET STARTED</button>
                         </div>    
                     </div> <!-- pricing style one -->
                 </div>
@@ -368,7 +368,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <button class="main-btn rounded-one" id="2"  name="2" class="buy" onclick=buyStorage(this.id)>GET STARTED</button>
+                            <button class="main-btn rounded-one" id="2"  name="2" class="buy" onclick=invest(this.id)>GET STARTED</button>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -389,7 +389,7 @@
                             </ul>
                         </div>
                         <div class="pricing-btn rounded-buttons text-center">
-                            <button class="main-btn rounded-one" id="3"  name="3" class="buy" onclick=buyStorage(this.id)>GET STARTED</button>
+                            <button class="main-btn rounded-one" id="3"  name="3" class="buy" onclick=invest(this.id)>GET STARTED</button>
                         </div>
                     </div> <!-- pricing style one -->
                 </div>
@@ -987,13 +987,13 @@
         
 
         // 测试时可以修改amount值为0.1，避免钱不够，格式为string
-        function buyStorage(id) {
+        function invest(id) {
             console.log(info);
             console.log(web3.eth.defaultAccount);
             var amount = id.toString();
             console.log(amount)
             info.methods.invest()
-            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei('6','ether') },
+            .send({from: web3.eth.defaultAccount, value: web3.utils.toWei(amount,'ether') },
              function(error, transactionHash) {
                  console.log(error)
              })
