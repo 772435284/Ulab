@@ -12,6 +12,10 @@ The next generation computing platform
 - Send money to the contract
 - More will be updated ...
 
+## Demo 
+- Now the website can be directly accessed through https://772435284.github.io/ (VPN required)
+
+
 ## Important Note
 - Created token name: Ubi
 - reward date end: 3 weeks after start
